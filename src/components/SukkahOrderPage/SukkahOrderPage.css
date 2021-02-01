@@ -1,5 +1,14 @@
 .SukkahOrderPage-continer-div {
-    width: 1000px;
-    /* border-style: solid; */
-    margin-top: 80px;
+    width: 100%;
+    max-width: 1000px;
+    padding-top: 80px;
 }
+/* 
+@media (max-width: 768px) {
+    .SukkahOrderPage-continer-div {
+        width: 100%;
+        padding-top: 80px;
+        background-image: url("./background_03.jpg");
+    
+    }
+} */

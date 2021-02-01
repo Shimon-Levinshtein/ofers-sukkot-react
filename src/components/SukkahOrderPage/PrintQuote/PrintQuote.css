@@ -6,10 +6,12 @@
 }
 
 .printQuote-continerd-img-sum {
-    width: 350px;
+    width: 35%;
+    max-width: 35%;
 }
 
 .printQuote-continerd-img-sum img {
+    max-width: 100%;
     margin-top: -7px;
     margin-bottom: -10px;
     margin-right: -13px;
@@ -18,7 +20,7 @@
 
 .printQuote-summary-all-order {
     background-color: white;
-    width: 310px;
+    width: 31%;
     text-align: center;
     background: #fff;
     border: 1px solid #ddd;
@@ -29,5 +31,8 @@
 }
 
 .printQuote-print-button {
-    width: 340px;
+    width: 34%;
+}
+.printQuote-print-button img{
+    max-width: 100%;
 }

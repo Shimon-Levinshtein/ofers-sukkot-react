@@ -2,6 +2,7 @@ import React from 'react';
 import './SizeSelection.css';
 import picSize from './PicSize.jpg';
 import picPNumber from './PicPNumber.jpg';
+import {isMobile} from 'react-device-detect';
 
 const SizeSelection = props => {
     return (

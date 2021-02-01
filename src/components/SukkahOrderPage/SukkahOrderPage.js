@@ -16,7 +16,7 @@ import SubmitForm from './SubmitForm/SubmitForm';
 
 const SukkahOrderPage = props => {
     return (
-        <div className='SukkahOrderPage-continer-div' style={{background: 'transparent'}}>
+        <div className='SukkahOrderPage-continer-div'>
             <SizeSelection />
             <SizeImage />
             <SelectionStages />
