@@ -1,0 +1,21 @@
+.OneStep-continer-div {
+    /* display: flex;
+    justify-content: space-around; */
+    background: #fff;
+    margin: 5% 0;
+    font-size: 28px;
+    color: #a6171d;
+    font-weight: bold;
+    padding: 15px 12% 15px 0;
+    position: relative;
+}
+
+.OneStep-continer-div img {
+    position: absolute;
+    right: 10px;
+    top: -20px;
+}
+
+.OneStep-continer-text {
+    text-align: right;
+}

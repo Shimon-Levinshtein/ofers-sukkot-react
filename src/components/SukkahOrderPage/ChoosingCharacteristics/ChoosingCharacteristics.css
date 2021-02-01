@@ -1,0 +1,13 @@
+.choosingCharacteristics-comntiner-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.choosingCharacteristics-right-div {
+    width: 30%;
+}
+
+.choosingCharacteristics-left-div {
+    width: 70%;
+}

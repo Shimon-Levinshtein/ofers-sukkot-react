@@ -1,0 +1,40 @@
+.selectExtension-continer-div {
+  
+}
+
+.selectExtension-continer-img {
+    /* display: flex;
+    justify-content: space-around; */
+    background: #fff;
+    margin: 5% 0;
+    font-size: 28px;
+    color: #a6171d;
+    font-weight: bold;
+    padding: 15px 12% 15px 0;
+    position: relative;
+}
+
+.selectExtension-continer-img img {
+    position: absolute;
+    right: 10px;
+    top: -20px;
+}
+
+.selectExtension-continer-text {
+    text-align: right;
+}
+
+.selectExtension-extras-continer {
+    padding: 30px;
+}
+
+.selectExtension-extras-continer img {
+    width: 200px;
+}
+
+.selectExtension-continer-text-recommendation {
+    font-size: 25px;
+    color: #a6171d;
+    font-weight: bold;
+    margin: 8px;
+}

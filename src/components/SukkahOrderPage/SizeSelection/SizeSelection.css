@@ -1,0 +1,34 @@
+.SizeSelection-continer-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.SizeSelection-continer-div h4{
+    margin: 0px;
+}
+
+.sizeSelection-select {
+    height: 40px;
+    width: 160PX;
+    padding: 5%;
+    font-size: 14px;
+    margin-top: 9px;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.sizeSelection-big-text {
+    font-weight: bold;
+    font-size: 28px;
+    align-items: center;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.muffins-everything-selected {
+    background-color: white;  
+    padding: 5%;
+    text-align: right;
+    font-size: 14pt;
+    font-weight: bold;
+}

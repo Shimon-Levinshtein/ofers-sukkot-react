@@ -1,0 +1,16 @@
+.choosingSukkahType-continer-div {
+width: 100%;
+}
+
+.choosingSukkahType-grayscale-img {
+    filter: grayscale(100%);
+}
+
+.choosingSukkahType-contint-img {
+    height: 400px;
+    margin: 10px;
+}
+.choosingSukkahType-contint-img img {
+   max-height: 100%;
+   max-width: 100%;
+}

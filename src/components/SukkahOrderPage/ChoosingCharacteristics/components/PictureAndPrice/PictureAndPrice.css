@@ -1,0 +1,20 @@
+.pictureAndPrice-continer-div {
+    width: 100%;
+}
+
+.pictureAndPrice-contining-img {
+    padding-right: 5px;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.pictureAndPrice-contining-img img {
+    width: 100%;
+}
+
+.pictureAndPrice-contining-price {
+    background-color: white;
+    margin-right: 9px;
+    padding: 3%;
+    margin-top: 3px;
+}
