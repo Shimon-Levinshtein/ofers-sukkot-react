@@ -6,7 +6,9 @@ const ChoosingCharacteristics = props => {
     return (
         <div className='choosingCharacteristics-comntiner-div'>
             <div className='choosingCharacteristics-right-div'>
-                <Muffins />
+                <div className='choosingCharacteristics-right-div-insid'>
+                    <Muffins />
+                </div>
             </div>
             <div className='choosingCharacteristics-left-div'>
                 <PictureAndPrice />

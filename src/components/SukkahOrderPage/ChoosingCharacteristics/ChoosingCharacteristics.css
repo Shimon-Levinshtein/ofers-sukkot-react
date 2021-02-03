@@ -11,3 +11,28 @@
 .choosingCharacteristics-left-div {
     width: 70%;
 }
+
+@media (max-width: 768px) {
+
+    .choosingCharacteristics-comntiner-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    } 
+
+    .choosingCharacteristics-right-div {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .choosingCharacteristics-right-div-insid {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+    
+    .choosingCharacteristics-left-div {
+        width: 100%;
+    }
+}

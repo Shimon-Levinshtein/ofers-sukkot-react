@@ -14,8 +14,16 @@
     position: absolute;
     right: 10px;
     top: -20px;
+    max-width: 100%;
 }
 
 .OneStep-continer-text {
     text-align: right;
+}
+
+@media (max-width: 768px) {
+    .OneStep-continer-text {
+        text-align: right;
+        padding-top: 80px;
+    }
 }
