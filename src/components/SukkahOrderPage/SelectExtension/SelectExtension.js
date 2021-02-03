@@ -18,7 +18,7 @@ const SelectExtension = props => {
                     בחרו תוספת
             </div>
             </div>
-            <div className='selectExtension-extras-continer flex-space-around background-gray-for-all'>
+            <div className='selectExtension-extras-continer background-gray-for-all'>
                 <div>
                     <img src={extrasA} />
                 </div>

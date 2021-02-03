@@ -7,7 +7,6 @@ const SubmitForm = props => {
         <div className='submitForm-continer-div flex-space-around'>
             <div className='submitForm-text-instructions-form'>
                 <strong>סיימתם לבחור סוכה?</strong>
-                {/* <br /> */}
                 כעת נותר לכם למלא את הטופס ונחזור אליכם
            </div>
             <div className='submitForm-contined-imputs flex-space-around'>

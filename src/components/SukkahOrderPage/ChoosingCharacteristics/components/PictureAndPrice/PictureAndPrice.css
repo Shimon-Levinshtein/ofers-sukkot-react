@@ -18,3 +18,27 @@
     padding: 3%;
     margin-top: 3px;
 }
+
+@media (max-width: 768px) {
+    .pictureAndPrice-continer-div {
+        width: 100%;
+    }
+    
+    .pictureAndPrice-contining-img {
+        padding-right: 5px;
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .pictureAndPrice-contining-img img {
+        width: 100%;
+    }
+    
+    .pictureAndPrice-contining-price {
+        background-color: white;
+        margin-right: 0px;
+        /* padding: 3%; */
+        margin-top: 3px;
+    }
+}

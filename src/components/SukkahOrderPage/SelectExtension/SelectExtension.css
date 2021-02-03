@@ -23,13 +23,12 @@
 }
 
 .selectExtension-extras-continer {
+    display: flex;
+    justify-content: space-around;
     padding: 15px;
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
-
 }
 
 .selectExtension-extras-continer img {
@@ -41,4 +40,25 @@
     color: #a6171d;
     font-weight: bold;
     margin: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .selectExtension-continer-text {
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    .selectExtension-extras-continer {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .selectExtension-extras-continer img {
+        width: 40%;
+        margin: 10px;
+    }
 }
