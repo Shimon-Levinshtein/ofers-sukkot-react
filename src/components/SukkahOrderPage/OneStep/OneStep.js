@@ -5,7 +5,7 @@ const OneStep = props => {
     return (
         <div className="OneStep-continer-div">
             <div>
-                <img src={oneStepImg}></img>
+                <img src={oneStepImg} alt=""></img>
             </div>
             <div className="OneStep-continer-text">
                 בחרו דגם סוכה מבין שני דגמי הסוכות של "סוכות ירושלים"

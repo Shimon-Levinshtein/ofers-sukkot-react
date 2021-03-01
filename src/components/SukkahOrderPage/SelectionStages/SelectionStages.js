@@ -11,7 +11,7 @@ const SelectionStages = props => {
 
     return (
         <div className='selectionStages-continer-div'>
-                <img src={priceOffer}></img>
+                <img src={priceOffer}  alt=""></img>
         </div>
     );
 };

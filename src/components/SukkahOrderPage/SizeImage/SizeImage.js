@@ -6,7 +6,7 @@ import image from './4_61.png';
 const SizeImage = props => {
     return (
         <div className="SizeImage-continer-div"> 
-                <img src={image}></img>
+                <img src={image} alt=""></img>
 
         </div>
     );

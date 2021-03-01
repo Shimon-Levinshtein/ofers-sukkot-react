@@ -28,7 +28,7 @@ const SubmitForm = props => {
                 </div>
             </div>
             <div className='submitForm-contined-img-send'>
-                <img src={fcbutton} />
+                <img src={fcbutton} alt="" />
             </div>
         </div>
     );

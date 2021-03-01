@@ -6,7 +6,7 @@ const PictureAndPrice = props => {
     return (
         <div className='pictureAndPrice-continer-div'>
             <div className='pictureAndPrice-contining-img'>
-                <img src={suka}></img>
+                <img src={suka} alt=""></img>
             </div>
             <div className='pictureAndPrice-contining-price'>
                 מחיר: 900$

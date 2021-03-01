@@ -7,10 +7,10 @@ const ChoosingSukkahType = props => {
     return (
         <div className='choosingSukkahType-continer-div flex-space-around '>
             <div className='choosingSukkahType-contint-img'>
-                <img className='choosingSukkahType-grayscale-img' src={sukkotJerusalem1}></img>
+                <img className='choosingSukkahType-grayscale-img' src={sukkotJerusalem1} alt=""></img>
             </div>
             <div className='choosingSukkahType-contint-img'>
-                <img src={sukkotKingDavid}></img>
+                <img src={sukkotKingDavid} alt=""></img>
             </div>
         </div>
     );

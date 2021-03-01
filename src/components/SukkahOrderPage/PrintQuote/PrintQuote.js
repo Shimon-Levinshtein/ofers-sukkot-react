@@ -2,20 +2,19 @@ import React from 'react';
 import './PrintQuote.css';
 import printIt from './PrintIt.jpg';
 import total from './total.png';
-import { isMobile } from 'react-device-detect';
 
 
 const PrintQuote = props => {
     return (
         <div className='printQuote-continer-div'>
             <div className='printQuote-continerd-img-sum'>
-                    <img src={total} />
+                    <img src={total} alt="" />
             </div>
             <div className='printQuote-summary-all-order'>
                 189 ש''ח
             </div>
             <div className='printQuote-print-button' >
-                <img src={printIt} />
+                <img src={printIt} alt="" />
             </div>
         </div>
     );

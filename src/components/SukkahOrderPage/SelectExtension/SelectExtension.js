@@ -12,7 +12,7 @@ const SelectExtension = props => {
         <div className='selectExtension-continer-div'>
             <div className="selectExtension-continer-img">
                 <div>
-                    <img src={stepFour}></img>
+                    <img src={stepFour} alt=""></img>
                 </div>
                 <div className="selectExtension-continer-text">
                     בחרו תוספת
@@ -20,16 +20,16 @@ const SelectExtension = props => {
             </div>
             <div className='selectExtension-extras-continer background-gray-for-all'>
                 <div>
-                    <img src={extrasA} />
+                    <img src={extrasA} alt="" />
                 </div>
                 <div>
-                    <img src={extrasB} />
+                    <img src={extrasB} alt="" />
                 </div>
                 <div>
-                    <img src={extrasC} />
+                    <img src={extrasC} alt="" />
                 </div>
                 <div>
-                    <img src={extrasD} />
+                    <img src={extrasD} alt="" />
                 </div>
             </div>
             <div className='primery-color selectExtension-continer-text-recommendation'>
