@@ -11,7 +11,6 @@ export const requestAllData = () => {
                         .then(obj => {
                             const promise = obj.json();
                             promise.then(objExtras => {
-                                console.log(objSukkots);
                                 dispatch({ type: REQUEST_ALL_DATA, payload: {
                                     sukkotsData: objSukkots,
                                     extrasData: objExtras,

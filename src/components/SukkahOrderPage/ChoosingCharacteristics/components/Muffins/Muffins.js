@@ -11,7 +11,6 @@ const Muffins = props => {
 
     const hendlerSelectFabricType = () => {
         const obj = props.sukkotsData.sukkotsData;
-        console.log(obj);
         if (!obj) {
             return <option disabled >אין סוג בד לבחירה</option>
         }
