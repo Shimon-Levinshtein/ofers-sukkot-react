@@ -5,7 +5,17 @@ import { connect } from 'react-redux';
 import picSize from './PicSize.jpg';
 import picPNumber from './PicPNumber.jpg';
 
+import { changeTheControlDataSukkah } from '../../../actions/controlDataSukkah';
+
 const SizeSelection = props => {
+
+    const numberSittingChange = (e) => {
+        props.changeTheControlDataSukkah('numberSitting', e.currentTarget.value);
+    };
+
+    const sizeChange = (e) => {
+        props.changeTheControlDataSukkah('size', e.currentTarget.value);
+    };
 
     const hendlerSelectSize = () => {
         const obj = props.sukkotsData.sukkotsData;
@@ -33,7 +43,7 @@ const SizeSelection = props => {
                 <img src={picSize} alt=""></img>
             </div>
             <div className='select-default-style' >
-                <select className='sizeSelection-select' defaultValue={'DEFAULT'} onChange={() => { }}>
+                <select className='sizeSelection-select' defaultValue={'DEFAULT'} onChange={sizeChange}>
                     <option value="DEFAULT" disabled >בחר גודל</option>
                     {hendlerSelectSize()}
                 </select>
@@ -45,7 +55,7 @@ const SizeSelection = props => {
                 <img src={picPNumber} alt=""></img>
             </div>
             <div>
-                <select className='sizeSelection-select' defaultValue={'DEFAULT'} onChange={() => { }}>
+                <select className='sizeSelection-select' defaultValue={'DEFAULT'} onChange={numberSittingChange}>
                     <option value="DEFAULT" disabled >בחר יושבים</option>
                     {hendlerSelectnumberSitting()}
                 </select>
@@ -58,4 +68,4 @@ const SizeSelection = props => {
 const mapStateToProps = state => {
     return { sukkotsData: state.allDataSukko }
 }
-export default connect(mapStateToProps, {})(SizeSelection);
+export default connect(mapStateToProps, { changeTheControlDataSukkah })(SizeSelection);

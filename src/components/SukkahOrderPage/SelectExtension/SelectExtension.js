@@ -8,7 +8,6 @@ import stepFour from './sukot_site_mhiron_15_8_13_10.png';
 const SelectExtension = props => {
 
     const extrasImgesRef = useRef()
-    console.log(props.sukkotsData.extrasData);
     const hendlerExtraImage = () => {
 
         const obj = props.sukkotsData.extrasData;
@@ -16,8 +15,9 @@ const SelectExtension = props => {
             return <option disabled >אין גודל לבחירה</option>
         }
         return Object.keys(obj).map((item, i) => (
-            <div key={i}>
+            <div className='selectExtension-div-extra-holder' key={i}>
                 <img src={obj[item].extrasPicture} alt="" />
+                <div className='selectExtension-text-of-img'>{obj[item].nameExtra}</div>
             </div>
         ))
     };
