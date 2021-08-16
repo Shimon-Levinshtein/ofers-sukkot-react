@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import picSize from './PicSize.jpg';
 import picPNumber from './PicPNumber.jpg';
 
-import { changeTheControlDataSukkah } from '../../../actions/controlDataSukkah';
+import { changeTheControlDataSukkah } from '../../../actions/filterDataSukkah';
 
 const SizeSelection = props => {
 
@@ -18,23 +18,46 @@ const SizeSelection = props => {
     };
 
     const hendlerSelectSize = () => {
-        const obj = props.sukkotsData.sukkotsData;
+        const obj = props.sukkotsData.filterSukkotsDataOriginal;
         if (!obj) {
             return <option disabled >אין גודל לבחירה</option>
         }
-        return Object.keys(obj).map((item, i) => (
-            <option key={i} >{obj[item].size}</option>
+        const objKeys = {};
+        for (const property in obj) {
+            objKeys[obj[property].size] = obj[property].size;
+        };
+        return Object.keys(objKeys).map((item, i) => (
+            <option key={i} >{objKeys[item]}</option>
         ))
     };
 
     const hendlerSelectnumberSitting = () => {
-        const obj = props.sukkotsData.sukkotsData;
-        if (!obj) {
+        const obj = props.sukkotsData.filterSukkotsData;
+        if (!obj ) {
             return <option disabled >אין מספא יושבים לבחירה</option>
         }
-        return Object.keys(obj).map((item, i) => (
-            <option key={i} >{obj[item].numberSitting}</option>
+        const objKeys = {};
+        for (const property in obj) {
+            objKeys[obj[property].numberSitting] = obj[property].numberSitting;
+        };
+        const newKeysArr = [];
+        if (props.sukkotsData.numberSitting === '?') {
+            newKeysArr.push('בחר יושבים');
+        };
+        Object.keys(objKeys).map((item, i) => {
+            newKeysArr.push(objKeys[item]);
+            return false;
+        });
+        console.log(newKeysArr);
+        return newKeysArr.map((item, i) => (
+            <option key={i} value={item} >{item}</option>
         ))
+        // return Object.keys(objKeys).map((item, i) => (
+        //     <option key={i} value={objKeys[item]} >{objKeys[item]}</option>
+        // ))
+        // return Object.keys(objKeys).map((item, i) => (
+        //     <option key={i} >{objKeys[item]}</option>
+        // ))
     };
 
     return (
@@ -55,10 +78,14 @@ const SizeSelection = props => {
                 <img src={picPNumber} alt=""></img>
             </div>
             <div>
-                <select className='sizeSelection-select' defaultValue={'DEFAULT'} onChange={numberSittingChange}>
-                    <option value="DEFAULT" disabled >בחר יושבים</option>
+                <select className='sizeSelection-select' name='fruit' value={'DEFAULT'} onChange={numberSittingChange}>
+                    {/* <option value="DEFAULT" disabled >בחר יושבים</option> */}
                     {hendlerSelectnumberSitting()}
                 </select>
+                {/* <select className='sizeSelection-select' defaultValue={'DEFAULT'} onChange={numberSittingChange}>
+                    <option value="DEFAULT" disabled >בחר יושבים</option>
+                    {hendlerSelectnumberSitting()}
+                </select> */}
             </div>
         </div>
     );
@@ -66,6 +93,9 @@ const SizeSelection = props => {
 
 
 const mapStateToProps = state => {
-    return { sukkotsData: state.allDataSukko }
+    return {
+        sukkotsData: state.filterDataSukkah,
+        filterSukkotsDataOriginal: state.filterSukkotsDataOriginal
+    }
 }
 export default connect(mapStateToProps, { changeTheControlDataSukkah })(SizeSelection);

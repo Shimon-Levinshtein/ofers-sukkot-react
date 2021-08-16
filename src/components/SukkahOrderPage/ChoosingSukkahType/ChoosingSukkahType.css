@@ -9,6 +9,17 @@
 .choosingSukkahType-contint-img {
     max-height: 400px;
     margin: 10px;
+    position: relative;
+}
+.choosingSukkahType-contint-img-can-not-select {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.788);
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .choosingSukkahType-contint-img img {
    max-height: 100%;

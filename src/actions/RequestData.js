@@ -1,4 +1,5 @@
 export const REQUEST_ALL_DATA = 'REQUEST_ALL_DATA';
+export const UPDAT_ALL_FILTER_DATA = 'UPDAT_ALL_FILTER_DATA';
 
 
 export const requestAllData = () => {
@@ -15,6 +16,7 @@ export const requestAllData = () => {
                                     sukkotsData: objSukkots,
                                     extrasData: objExtras,
                                 } });
+                                dispatch({ type: UPDAT_ALL_FILTER_DATA, payload: objSukkots});
                             })
                         })
                 })

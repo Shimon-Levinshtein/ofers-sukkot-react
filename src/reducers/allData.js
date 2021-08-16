@@ -4,7 +4,7 @@ const defaultState = {
     sukkotsData: null,
     extrasData: null,
 }
-export default (state = defaultState, action) => {
+const allData = (state = defaultState, action) => {
     switch (action.type) {
         case REQUEST_ALL_DATA:
                 return action.payload;
@@ -12,4 +12,6 @@ export default (state = defaultState, action) => {
             return state;
 
     }
-}
+};
+
+export default allData;
